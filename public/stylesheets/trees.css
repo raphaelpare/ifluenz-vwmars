@@ -1,0 +1,70 @@
+/* 
+    Created on : 16 mars 2015, 09:42:14
+    Author     : Raphaël PARE
+*/
+body {
+	background-color: #28282b !important;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+h1 {
+	color:#FFF !important;
+	text-align: center;
+	font-weight: bold !important;
+	font-family: Consolas !important;
+	margin-bottom: 50px !important;
+}
+
+table {
+	width:100%;
+}
+
+td {
+	width:33%;
+}
+
+.login-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  margin-left: -50px;
+  color:#FFF;
+}
+
+.box {
+	vertical-align:top;
+	display:inline-block;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px;
+	text-align:center;
+	background-color: #FFF;
+	width:180px;
+	margin: 15px;
+}
+
+.run {
+	width:100%;
+	margin-bottom: 5px !important;
+}
+
+#add {
+	cursor: pointer;
+	font-size: 90px;
+
+	-webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+#add:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}

@@ -1,0 +1,101 @@
+body{
+	margin:0;
+    width:100%;
+    background-color:#3e3e42 !important; 
+}
+
+circle{
+  fill:steelblue;
+  stroke:steelblue;  
+  stroke-width:2px;
+}
+
+line{
+  stroke:grey;
+  stroke-width:3px;
+}
+
+#treesvg g text:hover, #treesvg g circle:hover{
+	cursor:pointer;
+}
+
+#treesvg line {
+    stroke:#fff;
+}
+
+#treesvg{
+	border:1px solid rgb(0, 156, 252);
+    background-color: #28282b;
+    height: 75%;
+    width:100%;
+}
+
+#labelpos{
+	color:white;
+}
+
+#g_labels text{
+	text-anchor:middle;
+}
+
+#g_elabels text{
+	text-anchor:middle;
+	fill:red;
+	font-weight:bold;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+#title {
+    position: absolute;
+    color:#fff;
+    font-size:2em;
+    font-family: "Consolas";
+    width:100%;
+    text-align:center;
+    z-index: 100;
+    font-weight: bold;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#home {
+    position: absolute;
+    margin-left: 1px;
+    z-index: 200;
+    border-radius: 0px !important;
+}
+
+#newMenu {
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+#btn-save {
+    position:absolute;
+    right:1px;
+    margin-top: -34px;
+    border-radius:0;
+}
+
+#infos {
+    background-color: #3e3e42;
+    height: 25%;
+    width:100%;
+    color:#fff;
+    font-family: "Consolas";
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+.popover-title {
+    color:#000;
+}
