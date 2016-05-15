@@ -13,9 +13,9 @@ describe('Basic routes tests', function() {
         .end(function(err, res) {
             res.should.have.status(200);
             done();
-        })
+        });
 
-    })
+    });
 
     it('GET to /pagecount should return 200', function(done){
         chai.request(server)
@@ -23,7 +23,7 @@ describe('Basic routes tests', function() {
         .end(function(err, res) {
             res.should.have.status(200);
             done();
-        })
+        });
 
-    })
-})
+    });
+});
