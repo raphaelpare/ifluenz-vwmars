@@ -81,10 +81,10 @@ app.get('/pagecount', function (req, res) {
 
 // test auth Vincent
 app.get('/home', function (req, res) {
-  res.send('home.html');
+  res.render('home.html');
 });
 app.get('/auth', function (req, res) {
-  res.send('auth.html');
+  res.render('auth.html');
 });
 
 // error handling
