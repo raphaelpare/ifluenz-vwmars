@@ -55,16 +55,7 @@ var initDb = function(callback) {
     console.log('Connected to MongoDB at: %s', mongoURL);
   });
 };
-// Portion de Test pour le routage pages HTML 
-var router = express.Router();
-router.get('/Index', function(req, res) {
-  res.send('Index.html');
-});
-router.get('/Auth', function(req, res) {
-  res.send('Auth.html');
-});
-app.use('/', router);
-//Vincent
+
 app.get('/', function (req, res) {
   if (db) {
     var col = db.collection('counts');
@@ -86,6 +77,14 @@ app.get('/pagecount', function (req, res) {
   } else {
     res.send('{ pageCount: -1 }');
   }
+});
+
+// test auth Vincent
+app.get('/home', function (req, res) {
+  res.send('home.html');
+});
+app.get('/auth', function (req, res) {
+  res.send('auth.html');
 });
 
 // error handling
