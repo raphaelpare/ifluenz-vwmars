@@ -63,7 +63,8 @@ router.get('/Index', function(req, res) {
 router.get('/Auth', function(req, res) {
   res.send('Auth.html');
 });
-
+app.use('/Index', router);
+app.use('/Auth', router);
 //Vincent
 app.get('/', function (req, res) {
   if (db) {
