@@ -55,7 +55,16 @@ var initDb = function(callback) {
     console.log('Connected to MongoDB at: %s', mongoURL);
   });
 };
+// Portion de Test pour le routage pages HTML 
+var router = express.Router();
+router.get('/Index', function(req, res) {
+  res.send('Index.html');
+});
+router.get('/Auth', function(req, res) {
+  res.send('Auth.html');
+});
 
+//Vincent
 app.get('/', function (req, res) {
   if (db) {
     var col = db.collection('counts');
